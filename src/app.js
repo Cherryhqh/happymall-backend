@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2019-06-26 21:08:38
 * @Last Modified by:   dell
-* @Last Modified time: 2019-06-27 07:20:50
+* @Last Modified time: 2019-06-27 20:54:34
 */
 
 import React from 'react';
@@ -16,5 +16,5 @@ ReactDOM.render(
 		<i className="fa fa-address-book"></i>
 		<h1>haha!</h1>
 	</div>,	
-	document.getElementById('root')
+	document.getElementById('app')
 )

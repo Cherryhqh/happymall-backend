@@ -79,5 +79,8 @@ module.exports = {
 	 		name:'common',
 	 		filename:'js/base.js'
 	 	})
-	]
+	],
+	devServer: {
+		port:8080
+	}
 };
