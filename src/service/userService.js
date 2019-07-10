@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2019-07-10 07:58:53
 * @Last Modified by:   dell
-* @Last Modified time: 2019-07-10 08:33:37
+* @Last Modified time: 2019-07-11 07:06:36
 */
 import MUtil from '../util/mm.js';
 import  $ from  'jquery'
@@ -42,6 +42,14 @@ class User {
 			status:true,
 			msg:'密码通过'
 		}
+	}
+
+	logout
+	logout() {
+		return _mm.request({
+			type:'post',
+			url: '/user/logout.do'
+		})
 	}
 }
 

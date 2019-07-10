@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2019-07-08 07:17:24
 * @Last Modified by:   dell
-* @Last Modified time: 2019-07-10 08:30:44
+* @Last Modified time: 2019-07-10 10:35:27
 */
 import  $ from  'jquery'
 
@@ -49,6 +49,39 @@ class MUtill{
 	//错误提示
 	errorTips(errMsg) {
 		alert(errMsg || 'wrong');
+	}
+	
+	//本地存储
+	setStorage(name,data) {
+		let dataType = typeof data;
+		//json对象
+		if(dataType === 'object'){
+			window.localStorage.setItem(name,JSON.stringify(data));
+		}
+		//基本类型
+		else if(['number','string','boolean'].indexOf(dataType) >= 0){
+			window.localStorage.setItem(name,data);
+		}
+		//其他不支持的类型
+		else{
+			alert('该类型不能用于本地存储')
+		}
+
+	}
+
+	//取出本地存储内容
+	getStorage(name){
+		let data = window.localStorage.getItem(name);
+		if(data){
+			return JSON.parse(data);
+		}else{
+			return '';
+		}
+	}
+
+	//删除本地存储
+	removeStorage(name) {
+		window.localStorage.removeItem(name);
 	}
 
 }

@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2019-07-08 19:30:15
 * @Last Modified by:   dell
-* @Last Modified time: 2019-07-10 08:46:16
+* @Last Modified time: 2019-07-10 10:32:11
 */
 
 import React from 'react';
@@ -48,7 +48,7 @@ export default class Login extends React.Component{
 		//验证通过
 		if(checkResult.status){
 			_user.login(loginInfo).then((res)=>{
-				// console.log(this.state.redirect);
+				_mm.setStorage('userInfo',res);
 				this.props.history.push(this.state.redirect);
 	 		},(errMsg)=>{
 				_mm.errorTips(errMsg);
@@ -57,6 +57,8 @@ export default class Login extends React.Component{
 			_mm.errorTips(checkResult.msg);
 		}
 	}
+
+
 	render(){
 		return(
 			<div className="col-md-4 col-md-offset-4">
