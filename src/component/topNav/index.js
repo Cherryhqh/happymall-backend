@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2019-07-03 21:14:41
 * @Last Modified by:   dell
-* @Last Modified time: 2019-07-04 07:50:39
+* @Last Modified time: 2019-07-08 21:54:30
 */
 import React from 'react';
 import { Link }  from 'react-router-dom';
@@ -32,10 +32,10 @@ class TopNav extends React.Component{
             </a>
             <ul className="dropdown-menu dropdown-user">
               <li>
-                <span>
+                <a href="https://www.baidu.com">
                   <i className="fa fa-sign-out fa-fw"></i>
                   <span>退出登录</span>
-                </span>
+                </a>
               </li>
             </ul>
           </li>
