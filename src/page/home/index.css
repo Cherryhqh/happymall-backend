@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2019-07-03 07:16:43
 * @Last Modified by:   dell
-* @Last Modified time: 2019-07-03 07:16:52
+* @Last Modified time: 2019-07-12 07:14:43
 */
 /*----------------------------------------------
 Author:www.webthemez.com
@@ -58,7 +58,7 @@ h4 {
 p {
 	font-size:16px;
 	line-height:25px;
-	padding-top:20px;
+	/*padding-top:20px;*/
 }
 .panel {
 	border-radius:0px;
