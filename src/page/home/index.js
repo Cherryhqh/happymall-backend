@@ -2,14 +2,13 @@
 * @Author: dell
 * @Date:   2019-07-03 06:44:13
 * @Last Modified by:   dell
-* @Last Modified time: 2019-07-12 07:33:30
+* @Last Modified time: 2019-07-13 08:55:05
 */
 import React from 'react';
 import { Link }  from 'react-router-dom';
 import PageTitle from '../../component/pageTitle/index';
 import MUtil from '../../util/mm.js';
 import Statistic from '../../service/statisticService.js';
-import './index.css';
 import './home.css';
 
 const _mm = new MUtil();
@@ -40,7 +39,6 @@ export default class Homw extends React.Component{
 		return(
 			<div id="page-wrapper">			
 		    <PageTitle title="首页">
-		    	<button className="btn btn-warning"></button>
 		    </PageTitle>
 				<div className="row">
 					<div className="col-md-4">

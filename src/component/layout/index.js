@@ -2,7 +2,7 @@
 * @Author: dell
 * @Date:   2019-07-03 07:20:30
 * @Last Modified by:   dell
-* @Last Modified time: 2019-07-04 07:18:26
+* @Last Modified time: 2019-07-13 08:46:09
 */
 import React from 'react';
 import TopNav from '../topNav/index.js';
@@ -19,8 +19,7 @@ class Layout extends React.Component{
 			<div id="wrapper">				
 					<TopNav />
 					<SideNav />
-				
-				{this.props.children}
+					{this.props.children}
 			</div>
 		)
 	}
